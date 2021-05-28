@@ -1,0 +1,6 @@
+<div class="details">
+  <h2 class="display-2">Edit Budget</h2>
+  <img src="https://image.freepik.com/free-vector/finance-department-employees-are-calculating-expenses-company-s-business_1150-41782.jpg">
+  <app-form-budget [budget]="budget" (saveChanges)="onSaveChanges($event)"></app-form-budget>
+  <a class="btn btn-outline-danger" role="button" (click)="delBudget()">Delete</a>
+</div>

@@ -1,0 +1,18 @@
+.remark{
+  font-family: italic;
+  font-size: 15px;
+  color: gray;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+.T {
+  margin-bottom: 10px;
+}
+.btn-success{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.display-2 {
+  text-align: center;
+}

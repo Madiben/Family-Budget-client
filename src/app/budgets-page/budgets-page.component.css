@@ -1,0 +1,30 @@
+.display-2{
+  margin: 20px;
+}
+.list-group{
+  margin: 20px;
+  width: 95%;
+}
+.btn-success {
+  margin: 20px;
+  width: 95%;
+}
+.btn-s{
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  color: green;
+}
+.btn-dan{
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  color: red;
+}
+img{
+  height: 250px;
+  width: 95%;
+}
+.mb-1{
+  text-transform: uppercase;
+}

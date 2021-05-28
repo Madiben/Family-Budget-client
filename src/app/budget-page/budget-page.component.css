@@ -1,0 +1,22 @@
+.details{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.btn-success{
+  width: 49%;
+  margin-right: 2px;
+}
+.btn-outline-danger{
+  width: 49%;
+  margin-left: 2px;
+}
+.row{
+  text-align: center;
+}
+.display-2 {
+  text-align: center;
+}
+.title {
+  text-transform: uppercase;
+}
+

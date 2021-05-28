@@ -1,0 +1,29 @@
+<h2 class="display-2">My Budgets</h2>
+<a class="btn btn-success" routerLink="/budget/new" role="button">NEW BUDGET ENTRY</a>
+<img src="https://image.freepik.com/free-vector/financial-accounting-female-accountant-cartoon-character-making-financial-report-summary-analysis-reporting-financial-statement-income-balance-vector-isolated-concept-metaphor-illustration_335657-2801.jpg">
+<div class="list-group">
+  <a *ngFor="let budget of budgets"
+    routerLink="/budgets/{{budget.id}}"
+    class="list-group-item list-group-item-action"
+    [class.list-group-item-danger]="bstatus(budget)  === 'Outcome'"
+    [class.list-group-item-success]="bstatus(budget)  === 'Income'"
+  >
+    <div class="d-flex w-100 justify-content-between align-items-center">
+      <h5 class="mb-1">{{budget.title}}</h5>
+      <a
+      routerLink="/budgets/{{budget.id}}/edit"
+      [class.btn-dan]="bstatus(budget) === 'Outcome'"
+      [class.btn-s]="bstatus(budget) === 'Income'"
+      >
+      <span
+      >EDIT</span>
+      </a>
+    </div>
+    <p class="mb-1">
+      {{budget.status}} : {{budget.amount}}
+    </p>
+    <small>
+      <i class="fas fa-map-marker-alt"></i> Category : {{budget.category}}
+    </small>
+  </a>
+</div>

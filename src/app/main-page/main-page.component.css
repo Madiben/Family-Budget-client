@@ -1,0 +1,49 @@
+.imgg {
+  margin: 3%;
+  position: relative;
+  text-align: center;
+}
+.txt {
+  position: absolute;
+  top: 20px;
+  color:Black;
+  position: inherit;
+  text-align: center;
+}
+.btn-red{
+  border: 3px solid red;
+  color: red;
+  text-align: center;
+  width: 100%;
+}
+.card-img-top{
+  border-radius: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  overflow:none
+}
+.card-text{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.card-title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.display-4{
+  margin-bottom: 10px;
+  text-align: center;
+}
+.lead{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+
+}

@@ -1,0 +1,22 @@
+<div class="details">
+  <h2 class="display-2">Details</h2>
+  <img src="https://image.freepik.com/free-vector/family-couple-saving-money_74855-5240.jpg">
+  <dl class="row">
+    <dt class="col-sm-3">Status</dt>
+    <dd class="col-sm-9">{{ bstatus(budget) }}</dd>
+
+    <dt class="col-sm-3">Title</dt>
+    <dd class="col-sm-9 title">{{ budget.title }}</dd>
+
+    <dt class="col-sm-3">Category</dt>
+    <dd class="col-sm-9">{{budget.category}}</dd>
+
+    <dt class="col-sm-3">Amount</dt>
+    <dd class="col-sm-9">{{budget.amount}}</dd>
+  </dl>
+
+  <p>
+    <a class="btn btn-success" routerLink="/budgets/{{budget.id}}/edit" role="button">Edit</a>
+    <a class="btn btn-outline-danger" role="button" (click)="delBudget()">Delete</a>
+  </p>
+</div>

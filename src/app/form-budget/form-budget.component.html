@@ -1,0 +1,47 @@
+<form action="" [formGroup]="budgetForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label class="T" for="title">Title</label>
+    <input
+      type="text"
+      class="form-control"
+      id="title"
+      value="{{budget.title}}"
+      placeholder="Title"
+      [class.is-invalid]="wrongtitle"
+      [class.is-valid]="correcttitle"
+      formControlName="title"
+      required
+    />
+    <div class="invalid-feedback">Please provide a title!</div>
+  </div>
+  <div class="form-group">
+    <label class="T" for="amount">Amount</label>
+    <input
+      class="form-control"
+      type="number"
+      value="{{budget.amount}}"
+      id="amount"
+      formControlName="amount"
+      required
+    />
+    <div class="remark"> !!! Negative Amount for Outcome, and Positive for Income !!!</div>
+  </div>
+  <div class="form-group">
+    <label class="T" for="category">Category</label>
+    <input
+      type="text"
+      class="form-control"
+      id="category"
+      value="{{budget.category}}"
+      placeholder="Category"
+      formControlName="category"
+      [class.is-invalid]="wrongcategory"
+      [class.is-valid]="correctcategory"
+      required
+    />
+    <div class="invalid-feedback">Please provide a Category!</div>
+    <div class="remark"> Eg: Food, Clothes, Education ...etc</div>
+  </div>
+  <button type="submit" class="btn btn-success"  [disabled]="!this.budgetForm.valid">Save</button>
+</form>
+
